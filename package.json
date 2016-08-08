@@ -1,0 +1,16 @@
+{
+  "name": "@scola/cache-memcache",
+  "version": "0.0.0",
+  "description": "MemCache",
+  "repository": "github:scola84/node-cache-memcache",
+  "author": "M.C. van den Boogaart <scola@kvdb.name>",
+  "license": "MIT",
+  "main": "./dist/cache-memcache3.js",
+  "jsnext:main": "./index.js",
+  "devDependencies": {
+    "rollup": "^0.26.3"
+  },
+  "scripts": {
+    "build": "rollup -i ./index.js -o ./dist/cache-memcache.js -f cjs"
+  }
+}
