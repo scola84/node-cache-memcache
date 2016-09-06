@@ -6,21 +6,21 @@ export default class MemCache {
 
   destroy() {}
 
-  storage(storage) {
-    if (typeof storage === 'undefined') {
+  storage(value) {
+    if (typeof value === 'undefined') {
       return this._storage;
     }
 
-    this._storage = storage;
+    this._storage = value;
     return this;
   }
 
-  lifetime(lifetime) {
-    if (typeof lifetime === 'undefined') {
+  lifetime(value) {
+    if (typeof value === 'undefined') {
       return this._lifetime;
     }
 
-    this._lifetime = lifetime;
+    this._lifetime = value;
     return this;
   }
 
